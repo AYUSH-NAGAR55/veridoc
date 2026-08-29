@@ -1,0 +1,10 @@
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+python-multipart==0.0.32
+pymupdf==1.28.2
+pdfplumber==0.11.9
+pytesseract==0.3.13
+opencv-python-headless==4.13.0.92
+scikit-learn==1.8.0
+numpy==2.4.4
+sqlalchemy==2.0.52

@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - veridoc_data:/app/app/storage
+      - veridoc_db:/app/data
+    environment:
+      - VERIDOC_DB_PATH=/app/data/veridoc.db
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  veridoc_data:
+  veridoc_db:
